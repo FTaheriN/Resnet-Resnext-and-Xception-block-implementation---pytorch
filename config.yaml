@@ -1,0 +1,31 @@
+random_seed: 12
+
+problem: "classification"
+
+# Model hyperparameters
+learning_rate: 0.001
+batch_size: 256
+num_epochs: 10
+step_size: 10
+gamma: 0.5
+ckpt_save_freq: 30
+
+# Mode (train or test)
+mode: test
+
+# Model architecture
+model: residual
+
+# Dataset parameters
+dir_train: ./dataset/cifar10/train/
+dir_test: ./dataset/cifar10/test/
+
+# Model path
+ckpt_save_path: ./model/
+ckpt_name: /ckpt_Residual model_epoch10.ckpt
+
+# Loss function
+loss_func: cross_entropy
+
+
+
